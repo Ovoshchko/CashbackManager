@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: cashbackManager
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  datasource:
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+
+springdoc:
+  default-produces-media-type: application/json
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+server:
+  port: 8080
